@@ -1,20 +1,21 @@
 import React from 'react';
 import { auth } from './firebase';
-
+import './current-user.css';
 const CurrentUser = ({user}) => {
-    const {displayName, photoURL, uid} = user;
+    const {displayName, photoURL} = user;
     return (
-        <div>
-            <div>
-                <img 
+        <div className="user-panel">
+                <div className="image-container">
+                <img
+                className="display-photo" 
                 src={photoURL}
                 alt={displayName}
                 />
-            </div>
-            <div>
+                </div>
+                <div className="profile-container">
                 <h3>{displayName}</h3>
                 <button onClick={() => auth.signOut()}>Sign Out</button>
-            </div>
+                </div>
         </div>
     )
 }

@@ -19,11 +19,11 @@ class NewRestaurant extends Component {
     const { name } = this.state;
 
     return (
-      <form
-        className="NewRestaurant"
-      >
+      <form className="NewRestaurant"> 
+        <label htmlFor="restaurant"> Add a restaurant </label><br/>
         <input
           type="text"
+          id="restaurant"
           value={ name }
           placeholder="Name of Fine Establishment"
           onChange={(event) => this.setState({ name: event.target.value })}

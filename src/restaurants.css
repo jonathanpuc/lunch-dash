@@ -1,0 +1,12 @@
+.restaurants-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.restaurant {
+}

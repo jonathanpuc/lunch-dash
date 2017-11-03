@@ -1,0 +1,20 @@
+.restaurant ul {
+    list-style: none;
+    padding: 0;
+    font-size: 80%;
+}
+
+.btn {
+    border: none;
+    padding: 10px 22px;
+    outline: none;
+    color: white;
+}
+
+.no-btn {
+    background-color: red;
+}
+
+.yes-btn {
+    background-color: green;
+}
